@@ -3,7 +3,7 @@ const controls = document.getElementById("prepControls");
 const setSizeButton = document.createElement("button");
 setSizeButton.id = "button-imageButton";
 setSizeButton.onclick = () => {
-    const size = prompt("Enter Food Size (default is 3)");
+    const size = prompt("Enter Food Size (default is 100)");
     if (isNaN(parseFloat(size))) alert("Size must be a number!");
     else foodScale = size;
 }
